@@ -1,4 +1,4 @@
-class App {
+class Array {
 	public static void main(String args[]){
 		
 		char name[] = new char[5];
