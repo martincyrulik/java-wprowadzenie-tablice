@@ -57,5 +57,49 @@ class MultidimensionalArray {
 		System.out.println(produckt[1][0] + "" + produckt[1][1]);
 		System.out.println(produckt[2][0]+""+produckt[2][1]+""+produckt[2][2]+""+produckt[2][3]+""+produckt[2][4]);
 		System.out.println("---------");
+		System.out.println();
+		
+		
+		/************************************ ZADANIE 3 **********************************/	
+		System.out.println("ZADANIE 3");
+		
+		char[][] cross = new char[3][];
+		cross[0] = new char[4];
+		cross[1] = new char[3];
+		cross[2] = new char[7];
+		
+		// assign first entry
+		cross[0][0] = 'w';
+		cross[0][1] = 'o';
+		cross[0][2] = 'l';
+		cross[0][3] = 'f';
+		
+		// assign second entry - let's use unicode characters
+		cross[1][0] = 99;
+		cross[1][1] = 97;
+		cross[1][2] = 116;
+		
+		//assign third entry
+		cross[2][0] = 'g';
+		cross[2][1] = 'i';
+		cross[2][2] = 'r';
+		cross[2][3] = 'a';
+		cross[2][4] = 'f';
+		cross[2][5] = 'f';
+		cross[2][6] = 'e';
+		
+		// let's display the crossword
+		System.out.println("------------");
+		System.out.println(cross[0][0]+""+cross[0][1]+""+cross[0][2]+""+cross[0][3]+"");
+		System.out.println(cross[1][0]+""+cross[1][1]+""+cross[1][2]+"");
+		System.out.println(cross[2][0]+""+cross[2][1]+""+cross[2][2]+""+cross[2][3]+""+cross[2][4]+""+cross[2][5]+""+cross[2][6]);
+		System.out.println("------------");
+		System.out.println();
+		
+		System.out.println("The third char of the second entry: " + cross[1][2]);
+		System.out.println("The first char of the first entry: " + cross[0][0]);
+		cross[2][6] = 'y';
+		System.out.println("Changing over the last char of the third entry to 'y': " + cross[2][6]);
+		System.out.println("The length of the second entry: " + cross[1].length);
 	}
 }
